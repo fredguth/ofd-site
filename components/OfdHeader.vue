@@ -10,24 +10,32 @@ header.ofd-header#ofd-header(:class="{ '-fix': showHeader }")
 <script>
 export default {
   name: 'OfdHeader',
+  props: {
+    fixed: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return { showHeader: false }
   },
   created() {
-    if (typeof window !== 'undefined') {
-      // We are in the browser
-      const target = document.getElementById('logo')
-      const observer = new IntersectionObserver((entries) => {
-        const distanceToTop = target.getBoundingClientRect().top
-        if (distanceToTop < 0) {
-          this.showHeader = !this.showHeader
-        }
-      }, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-      })
-      observer.observe(target)
+    if (!this.fixed) {
+      if (typeof window !== 'undefined') {
+        // We are in the browser
+        const target = document.getElementById('logo')
+        const observer = new IntersectionObserver((entries) => {
+          const distanceToTop = target.getBoundingClientRect().top
+          if (distanceToTop < 0) {
+            this.showHeader = !this.showHeader
+          }
+        }, {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.5
+        })
+        observer.observe(target)
+      }
     }
   }
 }
