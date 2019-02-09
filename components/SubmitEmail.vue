@@ -2,18 +2,30 @@
 div
   form.form-cta#sendmagic
     input.input(type="text", name="email", placeholder="sarah@hopeful.com", v-model="email")
-    button.ofd-button.-yellow(@click="send") Get your invitation
-  p.-small.-rightaligned * Free. No credit card required.
+    button.ofd-button.-yellow(@click="send") {{ text }}
+  p.-small.-rightaligned {{ subtitle }}
 </template>
 
 <script>
 export default {
   name: 'SubmitEmail',
+  props: {
+    text: {
+      type: String,
+      default: 'Send'
+    },
+    subtitle: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
     return { email: null }
   },
   methods: {
     send: function (e) {
+      e.preventDefault()
+      this.$router.push({ name: 'check-email' })
     }
   }
 }

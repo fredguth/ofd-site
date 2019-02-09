@@ -3,8 +3,8 @@
 header.ofd-header#ofd-header(:class="{ '-fix': showHeader }")
   a.logo(href="/") <span>One</span> Final Doc
   nav.nav
-    a.ofd-button.-transparent(href="") Sign in
-    a.ofd-button(href="") Get your invitation
+    a.ofd-button.-transparent(href="/signin") Sign in
+    a.ofd-button(href="#signup") Get your invitation
 </template>
 
 <script>

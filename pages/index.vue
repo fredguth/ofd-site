@@ -28,11 +28,11 @@ main
       img(src="../assets/logo_onefinaldoc.svg")
 
     .content
-      h1.title Tame your Microsoft Word™️ documents version <span class="-strikethrough">dis</span>control
+      h1.title Tame your Microsoft Word™️ version <span class="-strikethrough">dis</span>control
       .branding.-mobile
         img(src="../assets/logo_onefinaldoc.svg")
       p Our secure and version controlled hub for your documents make collaborating easy, so you can focus on content. Finally!
-      <SubmitEmail />
+      <SubmitEmail text='Get your invitation' subtitle='* Free. No credit card required.'/>
 
   section.section-howto
     h2.title Just <i>carbon copy </i>  <a mailto="magic@just.onefinaldoc.com" style="word-wrap: break-word;">magic@just.onefinaldoc.com</a> and reply-to-all... to doubt your own eyes
@@ -43,10 +43,10 @@ main
         h4 <em>Subject:</em> Important Contract
         h4.animated-highlighter <em>Cc:</em> magic@just.onefinaldoc.com
     p We auto-upload all documents to your personal repository where is dead simple to identify changes and compare versions.
-  section.section-newsletter
+  section.section-newsletter#signup
     h2.title Say goodbye to chaos 👋
-    <SubmitEmail />
-    p Already a customer? <a href="">Sign in</a>
+    <SubmitEmail text='Get your invitation' subtitle='* Free. No credit card required.'/>
+    p Already a customer? <a href="/signin">Sign in</a>
 
 </template>
 
