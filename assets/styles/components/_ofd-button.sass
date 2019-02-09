@@ -1,0 +1,63 @@
+.ofd-button
+  background-color: $color-ofd-green
+  max-width: 100%
+  white-space: normal
+  display: inline-flex
+  font-weight: 500
+  letter-spacing: 0.05em
+  cursor: pointer
+  text-align: center
+  justify-content: center
+  font-family: $font-family-sans
+  transition: all 0.2s
+  border-radius: 4px
+
+  &:active
+    transform: translateY(0)
+    opacity: 0.6
+
+  &:hover
+    background-color: mix(#fff, $color-ofd-green, 30%)
+    transform: scale(1.05)
+
+
+  &.-small
+    padding-top: $space-micro
+    padding-bottom: $space-micro
+    padding-left: $space-micro
+    padding-right: $space-micro
+    font-size: $font-size-centi
+    line-height: $line-height-milli
+
+  &
+    letter-spacing: 0
+    padding-top: $space-milli
+    padding-bottom: $space-milli
+    padding-left: $space-milli
+    padding-right: $space-milli
+    font-size: $font-size-deci
+    line-height: $line-height-centi
+    +media-smallonly
+      padding-left: $space-centi
+      padding-right: $space-centi
+
+  &.-large
+    padding-top: $space-centi
+    padding-bottom: $space-centi
+    padding-left: $space-centi
+    padding-right: $space-centi
+    font-size: $font-size-base
+    line-height: $line-height-centi
+    +media-smallonly
+      padding-left: $space-centi
+      padding-right: $space-centi
+
+  &.-transparent
+    background-color: rgba(#fff, 0.3)
+    &:hover
+      background-color: rgba(#fff, 0.6)
+
+  &.-yellow
+    background-color: $color-ofd-yellow
+    &:hover
+      background-color: mix(#fff, $color-ofd-yellow, 30%)

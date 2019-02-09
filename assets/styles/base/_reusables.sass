@@ -1,0 +1,45 @@
+=container-width
+  padding-left: $space-centi
+  padding-right: $space-centi
+  +media-mediumup
+    padding-left: calc(#{$space-base} + 1vw)
+    padding-right: calc(#{$space-base} + 1vw)
+  +media-largeup
+    padding-left: calc(#{$space-deca} + 4vw)
+    padding-right: calc(#{$space-deca} + 4vw)
+  +media-hugeup
+    padding-left: calc((100vw - 72rem) / 2)
+    padding-right: calc((100vw - 72rem) / 2)
+
+=align-center
+  position: relative
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+=typography-sizes($fs: $font-size-base, $lh: $line-height-base, $fs-mu: $fs, $lh-mu: $lh)
+  font-size: $fs
+  line-height: $lh
+  +media-mediumup
+    font-size: $fs-mu
+    line-height: $lh-mu
+
+=placeholder
+  &::placeholder
+    @content
+
+=section-centered
+  > .title
+    text-align: center
+    +media-mediumup
+      max-width: 90%
+      margin-left: auto
+      margin-right: auto
+
+=responsive-display
+  &.-mobile
+    +media-mediumup
+      display: none
+  &.-desktop
+    +media-mediumdown
+      display: none

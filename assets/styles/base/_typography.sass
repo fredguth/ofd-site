@@ -1,0 +1,92 @@
+html
+  font-variant-numeric: oldstyle-nums
+  font-feature-settings: "liga1" on
+  font-family: $font-family-body
+
+i
+  font-style: italic
+
+b, strong, em
+  font-weight: 700
+
+p,
+li,
+blockquote,
+pre
+  +typography-sizes($font-size-base, $line-height-base, $font-size-deca, $line-height-deca)
+  &:not(:first-child)
+    margin-top: $space-deci
+    +media-mediumup
+      margin-top: $space-base
+
+.-small
+  +typography-sizes($font-size-deci, $line-height-deci, $font-size-base, $line-height-base)
+  &:not(:first-child)
+    margin-top: $space-centi
+    +media-mediumup
+      margin-top: $space-deci
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a,
+p > a
+  cursor: pointer
+  color: $color-link
+  transition: color 0.2s ease
+  &:hover
+    color: mix(#000, $color-link, 40%)
+
+p > a
+  text-decoration: underline
+
+h1,
+h2,
+h3,
+h4,
+h5
+  font-weight: 400
+  font-family: $font-family-headings
+
+h1
+  +typography-sizes($font-size-kilo, $line-height-hecto, $font-size-mega, $line-height-mega)
+  &:not(:first-child)
+    margin-top: $space-base
+    +media-mediumup
+      margin-top: $space-deca
+
+h2
+  +typography-sizes($font-size-hecto, $line-height-hecto, $font-size-kilo, $line-height-kilo)
+  &:not(:first-child)
+    margin-top: $space-base
+    +media-mediumup
+      margin-top: $space-deca
+
+h3
+  +typography-sizes($font-size-base, $line-height-centi, $font-size-deca, $line-height-base)
+  &:not(:first-child)
+    margin-top: $space-deci
+    +media-mediumup
+      margin-top: $space-base
+
+h4
+  +typography-sizes($font-size-centi, $line-height-centi, $font-size-base, $line-height-deci)
+  &:not(:first-child)
+    margin-top: $space-milli
+    +media-mediumup
+      margin-top: $space-centi
+
+h5
+  +typography-sizes($font-size-milli, $line-height-milli, $font-size-centi, $line-height-centi)
+  &:not(:first-child)
+    margin-top: $space-milli
+    +media-mediumup
+      margin-top: $space-centi
+
+.-strikethrough
+  text-decoration: line-through
+
+.-rightaligned
+  text-align: right

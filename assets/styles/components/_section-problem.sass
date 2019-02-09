@@ -1,0 +1,42 @@
+.section-problem
+  display: flex
+  flex-direction: column-reverse
+  align-items: center
+  position: relative
+  > .hero-mail,
+  > .content > .hero-mail
+    +media-mediumdown
+      margin-top: $space-base
+      margin-bottom: $space-base
+    +media-mediumup
+      padding: $space-base
+      min-width: 32rem
+      width: 32rem
+      margin-left: $space-base
+  +media-mediumup
+    flex-direction: row
+    &::after
+      content: ''
+      width: 35%
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      display: block
+      z-index: -1
+      background: repeating-linear-gradient(-45deg, transparent, transparent 3rem, $color-ofd-red 3rem, $color-ofd-red 8rem)
+
+  > .content > .hero-mail
+    position: relative
+    +media-mediumdown
+      flex-direction: row
+      &::after
+        content: ''
+        position: absolute
+        right: -$space-centi
+        left: -$space-centi
+        top: 5rem
+        bottom: -1rem
+        display: block
+        z-index: -1
+        background: repeating-linear-gradient(-45deg, transparent, transparent 1rem, $color-ofd-red 1rem, $color-ofd-red 3rem)

@@ -1,0 +1,23 @@
+.section-solution
+  display: flex
+  align-items: center
+  +media-mediumdown
+    flex-direction: column
+
+  > .branding,
+  > .content > .branding
+    +responsive-display
+    +media-mediumdown
+      max-width: 16rem
+      margin-top: $space-base
+      margin-bottom: $space-base
+    +media-mediumup
+      min-width: 24rem
+      margin-right: $space-hecto
+
+  > .content
+    display: flex
+    flex-direction: column
+    align-items: center
+    > .title
+      +typography-sizes($font-size-hecto, $line-height-deca, $font-size-kilo, $line-height-kilo)
