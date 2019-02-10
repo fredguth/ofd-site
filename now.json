@@ -1,13 +1,10 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "ofd-site",
-  "alias": "web.onefinaldoc.com",
-  "dependencies": {
-    "nuxt": "latest"
-  },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start"
-  }
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
 }

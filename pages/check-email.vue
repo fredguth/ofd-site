@@ -18,7 +18,6 @@ export default {
   name: 'CheckEmail',
   mounted() {
     const target = document.getElementById('recipient')
-    // const consola = require('consola')
     confetti(target)
   }
 }

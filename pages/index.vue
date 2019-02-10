@@ -13,7 +13,7 @@ main
         article.body
           p Thanks for sending along contract-<em>final-final-v3</em>.docx.
           p I’ve attached some final changes.
-      p Your team wastes thousands of hours figuring out contract changes in long, chaotic, nerve-racking, email threads.
+      p Your team wastes thousands of hours sifting contract changes in long, nerve-racking, email threads.
     .hero-mail.-desktop
       header.header
         h4 <em>To:</em> max@hopeful.com
