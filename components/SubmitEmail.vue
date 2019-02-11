@@ -32,7 +32,7 @@ export default {
       e.preventDefault()
       if (this.email && this.reg.test) {
         const body = JSON.stringify({ email: this.email })
-        fetch('http://localhost:8888/contacts', {
+        fetch('https://server.onefinaldoc.com/contacts', {
           method: 'POST',
           mode: 'cors',
           cache: 'no-cache',
