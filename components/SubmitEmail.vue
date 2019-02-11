@@ -44,7 +44,7 @@ export default {
           .catch((error) => {
             this.$router.push({ name: 'oops', params: { error } })
           })
-        this.$router.push({ name: 'check-email' })
+        this.$router.push({ name: 'check-email', params: { email: this.email }})
       } else {
         this.errorMessage = 'Enter a valid email address.'
       }

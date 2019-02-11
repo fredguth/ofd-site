@@ -59,11 +59,6 @@ export default {
   components: {
     OfdHeader,
     SubmitEmail
-  },
-  metaInfo: {
-    title: 'OneFinalDoc, just one.',
-    // override the parent template and just use the above title only
-    titleTemplate: null
   }
 }
 </script>
