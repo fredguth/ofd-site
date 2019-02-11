@@ -1,11 +1,5 @@
 {
-  "version": 2,
+  "version": 1,
   "name": "ofd-site",
-  "alias": "web.onefinaldoc.com",
-  "builds": [
-    {
-      "src": "nuxt.config.js",
-      "use": "@bluebeel/nuxt"
-    }
-  ]
+  "alias": "web.onefinaldoc.com"
 }
