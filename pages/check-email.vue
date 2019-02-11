@@ -6,8 +6,8 @@ main
         .content
           h2 Check your email!
 
-          p  We've emailed a magic link to <em><span id="recipient">fred@onefinaldoc.com</span></em>. Click the link to confirm your address and get started.
-          p  Wrong email? Please <a href="/">re-enter your address</a>.
+          p  We've emailed a magic link to <em><span id="recipient">{{recipient}}</span></em>. Click the link to confirm your address and get started.
+          p  Wrong email? Please <a href="/#signup">re-enter your address</a>.
           p  &nbsp;
           h3
             a(href='/') Go Back
@@ -16,6 +16,11 @@ main
 import { confetti } from 'dom-confetti'
 export default {
   name: 'CheckEmail',
+  computed: {
+    recipient() {
+      return this.$route.query.email
+    }
+  },
   mounted() {
     const target = document.getElementById('recipient')
     confetti(target)
