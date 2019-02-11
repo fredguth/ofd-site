@@ -34,7 +34,6 @@ export default {
         const body = JSON.stringify({ email: this.email })
         fetch('https://server.onefinaldoc.com/contacts', {
           method: 'POST',
-          mode: 'cors',
           cache: 'no-cache',
           headers: {
             'Content-Type': 'application/json'
@@ -42,7 +41,7 @@ export default {
           body
         })
           .catch((error) => {
-            this.$router.push({ name: 'oops', params: { error } })
+            this.$router.push({ name: 'oops', query: { error } })
           })
         this.$router.push({ name: 'check-email', query: { email: this.email } })
       } else {
