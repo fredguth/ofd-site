@@ -14,7 +14,10 @@ module.exports = () => {
         { hid: 'description', name: 'description', content: pkg.description }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700' },
+        { rel: 'stylesheet', href: 'https://rsms.me/inter/inter-ui.css' },
+        { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css' }
       ]
     },
   
