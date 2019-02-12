@@ -66,11 +66,12 @@ module.exports = () => {
             exclude: /(node_modules)/
           })
         }
-      },
-      filenames: {
-        app: '[name].js',
-        chunk: '[name].js'
       }
+      // ,
+      // filenames: {
+      //   app: '[name].js',
+      //   chunk: '[name].js'
+      // }
     }
   }
 }
