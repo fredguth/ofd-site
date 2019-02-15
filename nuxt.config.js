@@ -20,7 +20,7 @@ module.exports = () => {
         { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css' }
       ]
     },
-  
+    
     /*
     ** Customize the progress-bar color
     */

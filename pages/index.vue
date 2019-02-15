@@ -28,7 +28,7 @@ main
       img(src="../assets/logo_onefinaldoc.svg")
 
     .content
-      h1.title Tame your Microsoft Word™️ version <span class="-strikethrough">dis</span>control
+      h1.title Tame your Microsoft Word™ version <span class="-strikethrough">dis</span>control
       .branding.-mobile
         img(src="../assets/logo_onefinaldoc.svg")
       p Our secure and version controlled hub for your documents make collaborating easy, so you can focus on content. Finally!
