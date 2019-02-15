@@ -68,7 +68,7 @@ export default {
       +media-mediumup
         margin-top: $space-base
       +media-mediumdown
-      flex-direction: column
+        flex-direction: column
       > .input
         background-color: #fff
         font-family: $font-family-body
