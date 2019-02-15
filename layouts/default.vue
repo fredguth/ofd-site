@@ -1,7 +1,5 @@
 <template>
-  <div class="page">
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
 <style lang="sass">
