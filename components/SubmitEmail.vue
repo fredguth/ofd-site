@@ -1,10 +1,10 @@
 <template lang="pug">
-div
-  form.form-cta#sendmagic
-    input.input(type="text", name="email", placeholder="sarah@hopeful.com", v-model="email")
-    button.ofd-button.-yellow(@click="send") {{ text }}
-  p.-small.-leftaligned.-error {{ errorMessage }}
-  p.-small.-rightaligned {{ subtitle }}
+  form.submit-email#sendmagic
+    .fields
+      input.input(type="text", name="email", placeholder="sarah@hopeful.com", v-model="email")
+      button.ofd-button.-yellow(@click="send") {{ text }}
+    p.-small.-leftaligned.-error {{ errorMessage }}
+    p.-small.-rightaligned {{ subtitle }}
 </template>
 
 <script>
@@ -54,6 +54,40 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-  p.-error
-    color: #e45d53
+  @import "assets/styles/ambience"
+  .submit-email
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    > .-error
+      color: #e45d53
+    > .fields
+      display: flex
+      align-items: stretch
+      margin-top: $space-deci
+      +media-mediumup
+        margin-top: $space-base
+      +media-mediumdown
+      flex-direction: column
+      > .input
+        background-color: #fff
+        font-family: $font-family-body
+        color: #000
+        padding-top: $space-milli
+        padding-bottom: $space-milli
+        padding-left: $space-milli
+        padding-right: $space-milli
+        transition: all 0.2s ease
+        border-radius: 4px
+        border: 1px solid hsl(0, 0%, 75%)
+        +media-mediumup
+          flex-grow: 1
+          margin-right: $space-milli
+        +media-mediumdown
+          margin-bottom: $space-milli
+        +placeholder
+          color: hsl(0, 0%, 75%)
+        &:focus
+          box-shadow: 0 0 8px rgba($color-ofd-blue, 0.6)
+          border-color: $color-ofd-blue
 </style>
