@@ -1,9 +1,9 @@
 <template lang="pug">
   div
-    form.submit-email(@submit.prevent)
+    form.submit-email(@submit.prevent="send")
       .fields
         input.input(type="text", name="email", placeholder="sarah@hopeful.com", v-model="email")
-        button.ofd-button.-yellow(@click.native="send" type="submit") {{ text }}
+        input.ofd-button.-yellow(type="submit" :value="text")
       p.-small.-leftaligned.-error {{ errorMessage }}
       p.-small.-rightaligned {{ subtitle }}
 </template>
@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     send: function (e) {
-      e.preventDefault()
+      // e.preventDefault()
       if (this.email && this.reg.test) {
         const body = JSON.stringify({ email: this.email })
         fetch('https://server.onefinaldoc.com/contacts', {
