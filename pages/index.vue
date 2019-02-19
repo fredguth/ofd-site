@@ -25,12 +25,12 @@ main
         p I’ve attached some <i>final</i> changes.
   section.section-solution
     .branding.-desktop(id='logo')
-      img(src="../assets/logo_onefinaldoc.svg")
+      img(src="../assets/logo_onefinaldoc.png")
 
     .content
       h1.title Tame your Microsoft Word™ version <span class="-strikethrough">dis</span>control
       .branding.-mobile
-        img(src="../assets/logo_onefinaldoc.svg")
+        img(src="../assets/logo_onefinaldoc.png")
       p Our secure and version controlled hub for your documents make collaborating easy, so you can focus on content. Finally!
       <SubmitEmail text='Get your invitation' subtitle='* Free. No credit card required.'/>
 
