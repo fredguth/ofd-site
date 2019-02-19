@@ -1,5 +1,14 @@
 {
   "version": 1,
   "name": "ofd-site",
-  "alias": "www.onefinaldoc.com"
+  "alias": "www.onefinaldoc.com",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "headers": {
+        "Location": "https://www.onefinaldoc.com"
+      }
+    }
+  ]
 }
