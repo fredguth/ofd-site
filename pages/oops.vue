@@ -6,6 +6,8 @@ main
         .content
           h2 💩, something went wrong!
           p  This is embarassing.  Obviously, this shouldn't have happened.
+          h3
+            a(href='https://www.onefinaldoc.com/') Go Back to Safety
 </template>
 <script>
 export default {
