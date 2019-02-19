@@ -1,7 +1,7 @@
 {
   "name": "ofd-site",
   "version": "1.0.0",
-  "description": "OneFinalDoc marketing site",
+  "description": "OneFinalDoc is a version control hub for your Microsoft Word™ documents.",
   "author": "Fred Guth",
   "private": true,
   "scripts": {
