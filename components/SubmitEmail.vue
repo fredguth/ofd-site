@@ -1,10 +1,11 @@
 <template lang="pug">
-  form.submit-email#sendmagic
-    .fields
-      input.input(type="text", name="email", placeholder="sarah@hopeful.com", v-model="email")
-      button.ofd-button.-yellow(@click="send") {{ text }}
-    p.-small.-leftaligned.-error {{ errorMessage }}
-    p.-small.-rightaligned {{ subtitle }}
+  div
+    form.submit-email(@submit.prevent)
+      .fields
+        input.input(type="text", name="email", placeholder="sarah@hopeful.com", v-model="email")
+        button.ofd-button.-yellow(@click.native="send" type="submit") {{ text }}
+      p.-small.-leftaligned.-error {{ errorMessage }}
+      p.-small.-rightaligned {{ subtitle }}
 </template>
 
 <script>

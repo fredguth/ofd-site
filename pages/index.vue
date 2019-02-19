@@ -35,18 +35,18 @@ main
       <SubmitEmail text='Get your invitation' subtitle='* Free. No credit card required.'/>
 
   section.section-howto
-    h2.title Just <i>carbon copy </i>  <a mailto="magic@just.onefinaldoc.com" style="word-wrap: break-word;">magic@just.onefinaldoc.com</a> and reply-to-all... to doubt your own eyes
+    h2.title Just <i>carbon copy </i>  <a mailto="magic@onefinaldoc.com" style="word-wrap: break-word;">magic@onefinaldoc.com</a> and reply-to-all... to doubt your own eyes
     .hero-mail
       header.header
         h4 <em>To:</em> andrew@part-one.com, clara@part-two.com
         h4 <em>From:</em> sarah@reallyhappy.com
         h4 <em>Subject:</em> Important Contract
-        h4.animated-highlighter <em>Cc:</em> magic@just.onefinaldoc.com
+        h4.animated-highlighter <em>Cc:</em> magic@onefinaldoc.com
     p We auto-upload all documents to your personal repository where is dead simple to identify changes and compare versions.
   section.section-newsletter#signup
     h2.title Say goodbye to chaos 👋
     <SubmitEmail text='Get your invitation' subtitle='* Free. No credit card required.'/>
-    p Already a customer? <a href="/signin">Sign in</a>
+    //- p Already a customer? <a href="/signin">Sign in</a>
 
 </template>
 
