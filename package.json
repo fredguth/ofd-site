@@ -5,7 +5,7 @@
     "author": "Fred Guth",
     "private": true,
     "scripts": {
-        "dev": "nuxt",
+        "dev": "nuxt --port 3333",
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
@@ -17,7 +17,8 @@
         "cross-env": "^5.2.0",
         "dom-confetti": "^0.1.0",
         "express": "^4.16.4",
-        "nuxt": "latest"
+        "nuxt": "latest",
+        "vue-shepherd": "^0.2.1"
     },
     "devDependencies": {
         "@nuxtjs/eslint-config": "^0.0.1",
