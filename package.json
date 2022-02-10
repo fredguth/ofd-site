@@ -24,7 +24,7 @@
         "@nuxtjs/eslint-config": "^0.0.1",
         "babel-eslint": "^8.2.1",
         "consola": "^2.4.0",
-        "node-sass": "^4.14.1",
+        "node-sass": "^7.0.0",
         "nodemon": "^2.0.4",
         "pug": "^2.0.3",
         "pug-plain-loader": "^1.0.0",
